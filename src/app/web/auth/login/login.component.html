@@ -1,0 +1,18 @@
+<div class="auth-action-container">
+    <div class="auth-action-container-title">
+        <h1>Login</h1>
+    </div>
+    <div class="auth-action-container-body">
+        <div>
+            <input type="text" placeholder="Username" [formControl]="username" />
+        </div>
+        <div>
+            <input type="password" placeholder="Password" [formControl]="password" />
+        </div>
+        <div class="submit-button-container">
+            <button class="submit-button" (click)="login()">Log In</button>
+        </div>
+
+        <div class="link-to-register">Don't have an account? <a [routerLink]="['/auth/register']">Get Started</a></div>
+    </div>
+</div>

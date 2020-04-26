@@ -1,0 +1,58 @@
+.auth-action-container {
+    width: 360px;
+    height: 390px;
+    padding: 15px 15px; 
+    background-color: white;
+    border-radius: 5px;
+
+    .auth-action-container-title {
+        color: #ff8000;
+        text-align: center;
+    }
+
+    .auth-action-container-body {
+        margin-top: 35px;
+        div {
+            margin-top: 10px;
+            input {
+                border-radius: 3px;
+                padding: 8px 5px;
+                font-size: 1.1rem;
+                font-family: "Quicksand";
+                width: -webkit-fill-available;
+                border: 1px solid #ddd;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .link-to-register {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .submit-button-container {
+            margin-top: 30px;
+            button {
+                padding: 8px 5px;
+                font-family: "Quicksand";
+                font-size: 1.1rem;
+                font-weight: bold;
+                background: linear-gradient(#ff8000, #ff9000);
+                width: -webkit-fill-available;
+                border: none;
+                border-radius: 3px;
+                color: white;
+                cursor: pointer;
+                transition: 0.2s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    
+}

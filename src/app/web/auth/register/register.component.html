@@ -1,0 +1,24 @@
+<div class="auth-action-container">
+    <div class="auth-action-container-title">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="auth-action-container-body">
+        <div>
+            <input type="text" placeholder="Name" [formControl]="name" />
+        </div>
+        <div>
+            <input type="text" placeholder="Username" [formControl]="username" />
+        </div>
+        <div>
+            <input type="email" placeholder="Email" [formControl]="email" />
+        </div>
+        <div>
+            <input type="password" placeholder="Password" [formControl]="password" />
+        </div>
+        <div class="submit-button-container">
+            <button class="submit-button" (click)="register()">Sign Up</button>
+        </div>
+
+        <div class="link-to-register">Already Registered? <a [routerLink]="['/auth/login']">Log In</a></div>
+    </div>
+</div>
